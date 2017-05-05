@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/AcPy" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
