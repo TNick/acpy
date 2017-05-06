@@ -63,7 +63,7 @@ class AcPy:
 
         # Declare instance attributes
         self.actions = []
-        self.menu = self.tr(u'&Advaita's tools')
+        self.menu = self.tr(u'&Advaita\'s tools')
         # TODO: We are going to let the user set this up in a future iteration
         self.toolbar = self.iface.addToolBar(u'AcPy')
         self.toolbar.setObjectName(u'AcPy')
@@ -200,7 +200,7 @@ class AcPy:
 
         for action in self.actions:
             self.iface.removePluginMenu(
-                self.tr(u'&Advaita's tools'),
+                self.tr(u'&Advaita\'s tools'),
                 action)
             self.iface.removeToolBarIcon(action)
         # remove the toolbar
@@ -227,7 +227,6 @@ class AcPy:
             self.dockwidget.closingPlugin.connect(self.onClosePlugin)
 
             # show the dockwidget
-            # TODO: fix to allow choice of dock location
             self.iface.addDockWidget(Qt.RightDockWidgetArea, self.dockwidget)
             self.dockwidget.show()
 
